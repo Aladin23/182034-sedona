@@ -1,12 +1,148 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Седона</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="main-nav  clearfix">
+                <ul class="left-nav">
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Фото и видео</a></li>
+                </ul>
+                <ul class="right-nav">
+                    <li><a href="#">Карта штата</a></li>
+                    <li><a href="hotels.html">Гостиницы</a></li>
+                </ul>
+                <a class="logo"><img src="http://placehold.it/138x70"></a>
+            </nav>
+            <div class="banner">
+                <div class="banner__title">
+                    <img src="http://placehold.it/458x352">
+                </div>
+            </div>
+            <div class="promo">
+                <h1>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h1>
+                <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+            </div>
+            <main class="advantages">
+                <section class="advantage__block-01  clearfix">
+                    <div class="advantage__item-text">
+                        <h3>Настоящий городок</h3>
+                        <span>&mdash; №1 &mdash;</span>
+                        <p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
+                    </div>
+                    <div class="advantage__item-picture">
+                        <img src="http://placehold.it/800x256">
+                    </div>
+                </section>
+                <section class="offers">
+                    <ul>
+                        <li class="offers__item-lodging">
+                            <h3>Жилье</h3>
+                            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                        </li>
+                        <li class="offers__item-food">
+                            <h3>Еда</h3>
+                            <p>Всегда заказываете фирменный бургер, вы не разочаруетесь!</p>
+                        </li>
+                        <li class="offers__item-souvenirs">
+                            <h3>Сувениры</h3>
+                            <p>Не только китайского, но и местного производства!</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="advantage__block-02  clearfix">
+                    <div class="advantage__item-picture">
+                        <img src="http://placehold.it/800x256">
+                    </div>
+                    <div class="advantage__item-text">
+                        <h3>Там есть мост дьявола</h3>
+                        <span>&mdash; №2 &mdash;</span>
+                        <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+                    </div>
+                </section>
+                <section class="advantages__block-03  clearfix">
+                    <ul>
+                        <li class="advantage__item">
+                            <h3>Небольшая площадь</h3>
+                            <span>&mdash; №3 &mdash;</span>
+                            <p>Все достопримечательности находятся очень близко</p>
+                        </li>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+                        <li class="advantage__item">
+                            <h3>Красивая дорога</h3>
+                            <span>&mdash; №4 &mdash;</span>
+                            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                        </li>
 
-  </body>
+                        <li class="advantage__item">
+                            <h3>Мало туристов</h3>
+                            <span>&mdash; №5 &mdash;</span>
+                            <p>Большинство едет в Гранд Каньон и толпится там</p>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+            <div class="search">
+                <div class="search__title">
+                    <h2>Заинтересовались?</h2>
+                    <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+                    <a href="#" class="search__btn">Поиск гостиницы в Седоне</a>
+                    <div class="modal-content  modal-content-show">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <label for="check-in">Дата заезда:</label>
+                                <input type="text" value="24 Апреля 2017" id="check-in" name="check-in" class="check-in-date">
+                                <button type="button" class="calendar"></button>
+                            </div>
+                            <div class="row">
+                                <label for="check-out">Дата выезда:</label>
+                                <input type="text" value="4 Июля 2017" id="check-out" name="check-out" class="check-out-date">
+                                <button type="button" class="calendar"></button>
+                            </div>
+                            <div class="row__last-line">
+                                <div class="row__line-break">
+                                    <label for="adults">Взрослые:</label>
+                                    <input type="text" name="adults" id="adults" value="2">
+                                    <button type="button" class="cross"></button>
+                                    <button type="button" class="minus"></button>
+                                </div>
+                                <div class="row__line-break">
+                                    <label for="kids">Дети:</label>
+                                    <input type="text" name="kids" id="kids" value="0">
+                                    <button type="button" class="cross"></button>
+                                    <button type="button" class="minus"></button>
+                                </div>
+                            </div>
+                            <button type="submit" class="modal-content__btn">Найти</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <h2 class="visially-hidden">Карта</h2>
+            </div>
+            <footer class="main-footer">
+                <div class="main-footer__wrapper">
+                    <section class="main-footer__hashtag">
+                        <h3 class="visially-hidden">#VisitSedona</h3>
+                        <p>#VisitSedona</p>
+                    </section>
+                    <section class="main-footer__social-btn">
+                        <h3 class="visially-hidden">Социальные сети</h3>
+                        <a href="#" class="social-btn social-btn-twitter">Твиттер</a>
+                        <a href="#" class="social-btn social-btn-facebook">Фейсбук</a>
+                        <a href="#" class="social-btn social-btn-youtube">Ютьюб</a>
+                    </section>
+                    <section class="main-footer__copyright">
+                        <h3 class="visially-hidden">Информация о компании</h3>
+                        <span>Website by</span>
+                        <a href="#" class="copyright__btn" title="html academy"></a>
+                    </section>
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>
